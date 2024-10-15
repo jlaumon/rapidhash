@@ -33,6 +33,8 @@
  *   - rapidhash source repository: https://github.com/Nicoshev/rapidhash
  */
 
+#ifndef RAPIDHASH_NO_INCLUDES
+
 /*
  *  Includes.
  */
@@ -43,6 +45,8 @@
   #if defined(_M_X64) && !defined(_M_ARM64EC)
     #pragma intrinsic(_umul128)
   #endif
+#endif
+
 #endif
 
 /*
